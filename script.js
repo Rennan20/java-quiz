@@ -55,9 +55,10 @@ function finishQuiz() {
   if (score < 30) {
     document.querySelector(".scoreText1").innerHTML = `Que isso, bixo?!`;
     document.querySelector(".scorePct").style.color = "#F00000";
+    document.querySelector(".prizeImage").src = "images/sad.jpg";
   } else if (score >= 30 && score < 70) {
-    document.querySelector("scoreText1").innerHTML = `Muito bem, amiguinho!`;
-    document.querySelector("scorePct").style.color = `#FFFF00`;
+    document.querySelector(".scoreText1").innerHTML = `Muito bem, amiguinho!`;
+    document.querySelector(".scorePct").style.color = `#FFFF00`;
   } else if (score >= 70) {
     document.querySelector(".scoreText1").innerHTML = `Parabéns`;
     document.querySelector(".scorePct").style.color = "#0D630D";
